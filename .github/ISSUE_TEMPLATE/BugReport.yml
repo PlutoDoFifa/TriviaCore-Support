@@ -1,0 +1,97 @@
+name: Bug Report
+description: Report plugin errors or unexpected behavior
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem with TriviaCore!
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Clearly describe what went wrong.
+      placeholder: Tell us what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps needed to reproduce the problem.
+      placeholder: |
+        1. 
+        2. 
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: input
+    id: triviacore-version
+    attributes:
+      label: TriviaCore Version
+      description: What version of TriviaCore are you using?
+      placeholder: "Example: 2.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: What Minecraft version is your server running?
+      placeholder: "Example: 26.2"
+    validations:
+      required: true
+
+  - type: input
+    id: paper-version
+    attributes:
+      label: Paper Version
+      description: What Paper version is your server running?
+    validations:
+      required: true
+
+  - type: input
+    id: java-version
+    attributes:
+      label: Java Version
+      description: What Java version is your server running?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Errors / Logs
+      description: Paste any relevant console errors or logs. Please remove sensitive information such as IP addresses.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add screenshots, videos, other plugins involved, or anything else that may help.
+    validations:
+      required: false
