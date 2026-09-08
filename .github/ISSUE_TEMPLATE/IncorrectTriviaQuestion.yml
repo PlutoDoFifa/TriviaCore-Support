@@ -1,0 +1,64 @@
+name: Incorrect Trivia Question
+description: Report a wrong answer, outdated information, typo, ambiguous question, etc.
+title: "[Question]: "
+labels: ["question correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve TriviaCore's question database!
+
+        Please provide as much information as possible so the question can be reviewed.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Trivia Question
+      description: Enter the trivia question that contains the issue.
+      placeholder: Paste the full question here.
+    validations:
+      required: true
+
+  - type: input
+    id: current-answer
+    attributes:
+      label: Current Answer
+      description: What answer does TriviaCore currently consider correct?
+      placeholder: Enter the current answer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What Is Wrong?
+      description: Explain what is incorrect, outdated, misspelled, ambiguous, or otherwise problematic.
+      placeholder: Explain the problem with the question or answer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-correction
+    attributes:
+      label: Suggested Correction
+      description: What should the question or correct answer be instead?
+      placeholder: Enter your suggested correction.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: If applicable, provide a reliable source that supports the correction.
+      placeholder: Link to a reliable source.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add any other information that may help verify or locate the question.
+    validations:
+      required: false
