@@ -1,0 +1,78 @@
+name: Documentation / Configuration
+description: Report incorrect documentation or get help with configuration
+title: "[Docs/Config]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for problems with TriviaCore's documentation or configuration.
+
+        Please provide enough information for the issue to be understood and reproduced.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of problem are you experiencing?
+      options:
+        - Incorrect documentation
+        - Unclear documentation
+        - Missing documentation
+        - Configuration question
+        - Configuration not working as expected
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what is incorrect, unclear, missing, or not working as expected.
+      placeholder: Describe the issue in detail.
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where did you encounter the issue?
+      placeholder: "Example: config.yml, commands documentation, installation guide"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Information or Behavior
+      description: What information or behavior did you expect?
+    validations:
+      required: false
+
+  - type: input
+    id: triviacore-version
+    attributes:
+      label: TriviaCore Version
+      description: What version of TriviaCore are you using?
+      placeholder: "Example: 2.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevant-config
+    attributes:
+      label: Relevant Configuration
+      description: If applicable, paste the relevant part of your configuration here. Remove any sensitive information.
+      render: yaml
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add screenshots, errors, or anything else that may help.
+    validations:
+      required: false
