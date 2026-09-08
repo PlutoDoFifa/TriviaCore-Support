@@ -1,0 +1,54 @@
+name: Feature Request
+description: Suggest a new feature or improvement for TriviaCore
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement for TriviaCore!
+
+        Feature requests are welcome, but submitting a request does not guarantee that it will be implemented.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature or improvement you would like to see added.
+      placeholder: What would you like TriviaCore to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: usefulness
+    attributes:
+      label: Why Would This Be Useful?
+      description: Explain how this would benefit server owners, administrators, or players.
+      placeholder: Tell us why this feature would be useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: How Should It Work?
+      description: If you have an idea for how the feature should work, describe it here.
+      placeholder: Describe how you imagine the feature working.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Are there any alternative solutions or ways this could be implemented?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Add examples, screenshots, references, or anything else that may help explain your idea.
+    validations:
+      required: false
